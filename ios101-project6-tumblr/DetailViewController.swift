@@ -6,12 +6,24 @@
 //
 
 import UIKit
+import NukeExtensions
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var postLabel: UILabel!
+    @IBOutlet weak var postImage: UIImageView!
+    
+    var post: Post!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        postLabel.text=post.caption
+        
+        
+        if let photo = post.photos.first {
+            let url = photo.originalSize.url
+            NukeExtensions.loadImage(with: url, into: postImage)
+        }
         // Do any additional setup after loading the view.
     }
     

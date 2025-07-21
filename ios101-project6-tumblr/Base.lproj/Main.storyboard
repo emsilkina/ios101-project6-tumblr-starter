@@ -89,6 +89,10 @@
                     <navigationItem key="navigationItem" title="Post Details" id="ecj-fc-DkQ">
                         <barButtonItem key="backBarButtonItem" title="Blog Posts" id="8D7-QU-uTq"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="postImage" destination="Obg-9u-Q7b" id="Dpl-WE-PJn"/>
+                        <outlet property="postLabel" destination="3U6-M6-gSQ" id="ppG-O1-0WP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8K7-V3-jFq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
