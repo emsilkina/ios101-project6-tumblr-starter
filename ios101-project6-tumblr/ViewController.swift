@@ -30,6 +30,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         guard let detailViewController = segue.destination as? DetailViewController else { return }
 
         detailViewController.post = selectedPost
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = "Blog Posts"
+        navigationItem.backBarButtonItem = backItem
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
